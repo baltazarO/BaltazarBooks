@@ -33,8 +33,9 @@ CREATE TABLE Author
 
 CREATE TABLE WrittenBy
 (
-    book_id    INTEGER PRIMARY KEY,
-    author_id  INTEGER PRIMARY KEY,
+    book_id    INTEGER,
+    author_id  INTEGER,
+    PRIMARY KEY (book_id, author_id),
     FOREIGN KEY (book_id) REFERENCES Book (id) 
 		ON DELETE NO ACTION ON UPDATE NO ACTION,
     FOREIGN KEY (author_id) REFERENCES Author (id)
@@ -49,8 +50,9 @@ CREATE TABLE Genre
 
 CREATE TABLE BookGenre
 (
-    book_id   INTEGER PRIMARY KEY,
-    genre_id  INTEGER PRIMARY KEY,
+    book_id   INTEGER,
+    genre_id  INTEGER,
+    PRIMARY KEY (book_id, genre_id),
     FOREIGN KEY (book_id) REFERENCES Book (id) 
 		ON DELETE NO ACTION ON UPDATE NO ACTION,
     FOREIGN KEY (genre_id) REFERENCES Genre (id)
