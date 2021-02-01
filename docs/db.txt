@@ -1,0 +1,66 @@
+Entity:
+
+Critic
+    id
+
+Review
+    id
+    score
+    data
+
+Book
+    id
+    title
+    isbn
+    author
+
+Author
+    id
+    first_name
+    last_name
+
+Genre
+    id
+    name
+
+Relationships:
+
+Critics can have many reviews   -- Must have
+
+Reviews can have one critic     -- Must have
+Reviews can have one book       -- Must have
+
+Books can have many reviews
+Books can have many authors     -- Must have
+Books can have many genres      -- Must have
+
+Authors can have many books     -- Must have
+
+Genres can have many books
+
+CriticReviews 1:N
+ReviewBook N:1
+BookAuthor M:N
+BookGenre M:N
+
+Critic
+id
+
+Review
+id score data critic_id book_id
+
+Book
+id title isbn year
+
+Author
+id first_name last_name
+
+WrittenBy
+book_id author_id
+
+Genre
+id name
+
+BookGenre
+book_id genre_id
+

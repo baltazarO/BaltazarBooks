@@ -1,0 +1,20 @@
+Four things I want to do:
+
+1. [E] As a critic, I want to be able to give a review on a book so I can tell others whether I liked it or not.
+
+2. [E] As a viewer, I want to see books and their scores so I can see which ones Baltazar likes.
+
+3. [E] As the website owner, I want links to the Amazon page for these books so viewers can buy the books if they want.
+
+4. [U] As a viewer, I want to click on a book and then go to a page to see its review so I can see Baltazar's full review.
+
+Take the top 1.
+
+As a critic, I want to be able to give a review on a book so I can tell others whether I liked it or not.
+
+1. Make the database
+2. Make a form
+3. Get form post request
+4. Update database
+5. Show thank you message.
+6. Do not allow back page
